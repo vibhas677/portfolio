@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibhas Gupta.Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&family=Quicksand:wght@300&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        /* ---------------------------------NavBar--------------------------------------------------- */
+        /* nav{
+    position: sticky;
+    top: 0%;
+    background-color: white;
+} */
+
+        .navbarname {
+            display: flex;
+            padding-top: 40px;
+            padding-left: 50px;
+            padding-bottom: 30px;
+        }
+
+        .navbarname h2 {
+
+            padding-right: 10px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            font-size: 25px;
+            color: rgb(219, 69, 69);
+        }
+
+        .navbarname h4 {
+            margin-top: 6px;
+            font-size: 15px;
+            font-family: 'Quicksand', sans-serif;
+            width: 50%;
+        }
+
+        .navbarname ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+
+        }
+
+        ul li a.active {
+            color: red;
+            font-size: 18px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            padding: 20px;
+            font-weight: bold;
+            color: black;
+            transition: 0.5s;
+        }
+
+        ul li a:hover {
+            color: red;
+            font-size: 18px;
+        }
+
+
+        /* ----------------------------------About Section----------------------------------------------- */
+
+        #aboutme {
+            height: 850px;
+            width: 500px;
+            background-color: rgb(236, 226, 209);
+        }
+
+        .aboutmecontent {
+            width: 70vw;
+            padding-top: 200px;
+            margin-left: 180px;
+            display: flex;
+
+        }
+
+        .logoname {
+            background-color: rgb(245, 239, 231);
+            height: 500px;
+            width: 45%;
+            box-shadow: -15px 15px 20px rgb(204, 189, 177);
+
+        }
+
+        .logoname img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+
+        .imagelogo {
+            padding-top: 50px;
+            padding-left: 100px;
+        }
+
+        .logoname h2 {
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Ubuntu', sans-serif;
+            padding-top: 20px;
+            color: rgb(103, 42, 42);
+        }
+
+        .logoname hr {
+            margin-left: 160px;
+            margin-top: 30px;
+            width: 80px;
+            background-color: red;
+            height: 2px;
+        }
+
+        .logoname h4 {
+            font-family: 'Quicksand', sans-serif;
+            letter-spacing: 6px;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+
+        .linkbox {
+            margin-top: 50px;
+            background-color: white;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .linkbox img {
+            width: 28px;
+            height: 28px;
+            margin-right: 20px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .linkbox img:hover {
+            width: 35px;
+            height: 35px;
+        }
+
+        .definemyself {
+            padding-left: 20px;
+
+        }
+
+        .definemyself h1 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 100px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: rgb(219, 69, 69);
+        }
+
+        .definemyself h3 {
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 20px;
+
+        }
+
+        .resume {
+            margin-top: 40px;
+        }
+
+        .resume .resumebtn {
+            text-decoration: none;
+            border: 2px solid rgb(219, 69, 69);
+            background-color: rgb(219, 69, 69);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 8px;
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: 0.5s;
+        }
+
+        .resume a:hover {
+            background-color: white;
+            border: 2px solid rgb(219, 69, 69);
+            color: black;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .resume .projectbtn {
+            text-decoration: none;
+            border: 2px solid rgb(219, 69, 69);
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            /* font-weight: bold; */
+            padding: 8px;
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: 0.5s;
+        }
+
+        .resume .projectbtn:hover {
+            background-color: rgb(219, 69, 69);
+            color: white;
+        }
+
+        .aboutmepara {
+            padding-top: 40px;
+            width: 450px;
+        }
+
+        .aboutmepara p {
+            margin-bottom: 20px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: bold;
+        }
+
+        /* ------------------------------------Skil section------------------------------------------ */
+
+        #skills {
+            height: 920px;
+            width: 500px;
+            background-color: rgb(236, 226, 209);
+        }
+
+        .skillheading {
+            text-align: center;
+            padding: 40px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+            letter-spacing: 3px;
+            width: 92vw;
+            background-color: white;
+        }
+
+
+        .skillsbox {
+
+            background-color: rgb(249, 244, 239);
+            box-shadow: -15px 15px 20px rgb(204, 189, 177);
+            width: 65vw;
+            margin-left: 178px;
+
+            height: 540px;
+            margin-left: 240px;
+
+        }
+
+        .skillscontent h2 {
+            font-family: 'Outfit', sans-serif;
+            color: rgb(127, 35, 35);
+            padding: 10px;
+            letter-spacing: 2px;
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 200px;
+            margin-top: 49px;
+            margin-bottom: 50px;
+            border: 1.3px solid rgb(156, 28, 28);
+            width: 900px;
+            border-radius: 40px;
+            background-color: white;
+
+        }
+
+        .animationbox {
+
+            margin-left: 50px;
+            padding-top: 30px;
+            height: 470px;
+            width: 90%;
+        }
+
+        .animationbox h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 30px;
+            color: rgb(104, 27, 27);
+
+        }
+
+        h3 span {
+            float: right;
+            font-size: 40px;
+
+        }
+
+        .animationbar {
+            background-color: rgb(229, 226, 226);
+            border-radius: 10px;
+            height: 10px;
+            margin-top: 30px;
+            margin-bottom: 50px;
+
+        }
+
+        #animation1 hr {
+            background-color: rgb(114, 173, 235);
+            border-radius: 10px;
+            border: none;
+            height: 10px;
+            animation-name: skillsanimation1;
+            animation-duration: 1.7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+        }
+
+        #animation2 hr {
+            background-color: rgb(28, 173, 88);
+            border-radius: 10px;
+            border: none;
+            height: 10px;
+            animation-name: skillsanimation2;
+            animation-duration: 1.7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+        }
+
+        #animation3 hr {
+            background-color: rgb(206, 154, 41);
+            border-radius: 10px;
+            border: none;
+            height: 10px;
+            animation-name: skillsanimation3;
+            animation-duration: 1.7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+        }
+
+        #animation4 hr {
+            background-color: rgb(201, 73, 84);
+            border-radius: 10px;
+            border: none;
+            height: 10px;
+            animation-name: skillsanimation4;
+            animation-duration: 1.7s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes skillsanimation1 {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: 90%;
+            }
+        }
+
+        @keyframes skillsanimation2 {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: 80%;
+            }
+        }
+
+        @keyframes skillsanimation3 {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: 71%;
+            }
+        }
+
+        @keyframes skillsanimation4 {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: 78%;
+            }
+        }
+
+        /* ------------------------------------Project section---------------------------------------- */
+
+        #projects {
+            height: 1470px;
+            width: 500px;
+            background-color: rgb(236, 226, 209);
+        }
+
+        .projectsheading {
+            text-align: center;
+            padding: 40px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+            letter-spacing: 3px;
+            width: 92vw;
+            background-color: white;
+        }
+
+        .projectscontainer {
+
+            width: 90vw;
+            height: 1000px;
+            margin-left: 90px;
+            margin-top: 50px;
+
+        }
+
+        .projectscontainer h2 {
+            font-family: 'Outfit', sans-serif;
+            color: rgb(127, 35, 35);
+            padding: 10px;
+            letter-spacing: 2px;
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center;
+            margin-left: 240px;
+            border: 1.3px solid rgb(156, 28, 28);
+            width: 700px;
+            border-radius: 40px;
+            background-color: white;
+        }
+
+        .projectsbox {
+
+            width: 90vw;
+            height: 500px;
+            margin-top: 50px;
+            margin-bottom: 80px;
+            display: flex;
+
+        }
+
+        .projectimage {
+            width: 440px;
+            height: 500px;
+            margin-left: 70px;
+            background-color: rgb(249, 244, 239);
+            box-shadow: -15px 15px 20px rgb(204, 189, 177);
+        }
+
+        .projectcontent {
+            width: 640px;
+            height: 500px;
+            padding-left: 30px;
+        }
+
+        .projectimage img {
+            width: 350px;
+            height: 270px;
+            border-radius: 20px;
+            margin-left: 45px;
+            margin-top: 60px;
+        }
+
+        .projectimage h3 {
+            font-family: 'Quicksand', sans-serif;
+            letter-spacing: 5px;
+            text-align: center;
+            margin-top: 60px;
+            color: rgb(117, 24, 24);
+
+        }
+
+        .projectimage hr {
+            width: 35%;
+            height: 1px;
+            border: none;
+            background-color: rgb(224, 46, 46);
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .projectcontent h1 {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 50px;
+            color: rgb(219, 69, 69);
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        .projectcontent p {
+            font-size: 18px;
+            font-family: 'Quicksand', sans-serif;
+            margin-bottom: 30px;
+            width: 500px;
+            font-weight: bold;
+        }
+
+        /* --------------------------------CONTACT SECTION------------------------------------- */
+
+        .contactheading {
+            text-align: center;
+            padding: 40px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 20px;
+            letter-spacing: 3px;
+            width: 92vw;
+            background-color: white;
+        }
+
+        .contactdatamain {
+            background-color: rgb(215, 211, 211);
+            height: 280px;
+            padding-left: 220px;
+        }
+
+        .contactdatainner {
+            display: flex;
+        }
+
+        .connect {
+            text-align: center;
+            height: 100px;
+            width: 27%;
+            margin-top: 70px;
+
+        }
+
+        .connect h2 {
+            font-family: 'Quicksand', sans-serif;
+
+        }
+
+        .connect p {
+            padding-top: 30px;
+            padding-bottom: 0px;
+        }
+
+        p a {
+            text-decoration: none;
+            color: black;
+        }
+
+        p .socialhandels {
+            width: 25px;
+            margin: 10px;
+        }
+
+        #follow p {
+            padding-top: 13px;
+        }
+
+        .copyright p {
+            padding-top: 50px;
+
+            padding-left: 310px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbarname">
+            <h2>Vibhas Gupta.</h2>
+            <h4>/ Web Developer</h4>
+
+            <ul class="navbar">
+                <li><a href="#aboutme" class="active">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+        </div>
+    </nav>
+    <section id="aboutme">
+        <div class="aboutmecontent">
+            <div class="logoname">
+                <div class="imagelogo">
+                    <img src="../portfolio/main.jpg" alt="">
+                </div>
+                <h2>Vibhas Gupta</h2>
+                <hr>
+                <h4>WEB DEVELOPER</h4>
+                <div class="linkbox">
+                    <a href="https://www.facebook.com" target="_blank"><img src="../vibhas project/facebook icon.webp"
+                            alt="" class="socialhandels"></a>
+                    <a href="https://www.instagram.com" target="_blank"> <img
+                            src="../vibhas project/instagram icon.webp" alt="" class="socialhandels"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"> <img src="../vibhas project/linkdn icon.webp"
+                            alt="" class="socialhandels"></a>
+
+                </div>
+            </div>
+            <div class="definemyself">
+                <h1>Hello,</h1>
+                <h3>I'm Vibhas Gupta, Web Developer in Training.</h3>
+                <div class="resume">
+                    <a href="../vibhas project/Vibhas resume wipro.pdf" target="_blank" class="resumebtn">RESUME</a>
+                    <a href="#projects" class="projectbtn">PROJECTS</a>
+                </div>
+                <div class="aboutmepara">
+                    <p>As a highly motivated and result driven engineer, I am looking forward to being asssociated with
+                        an organization with rewarding growth and development
+                        which can provide me a dynamic work sphere in the field of software
+                        development.</p>
+
+                    <p> I thrive on creating functional and visually appealing websites, and my goal as a web
+                        development student is to partner with companies that value user-centric design and cutting-edge
+                        technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h3 class="skillheading">MY SKILLS</h3>
+        <div class="skillscontent">
+            <h2>THESE ARE SOME OF MY TECHNICAL SKILLS</h2>
+            <div class="skillsbox">
+                <div class="animationbox">
+                    <h3>HTML<span>80%</span></h3>
+                    <div class="animationbar" id="animation1">
+                        <hr>
+                    </div>
+                    <h3>CSS<span>70%</span></h3>
+                    <div class="animationbar" id="animation2">
+                        <hr>
+                    </div>
+                    <h3>JAVA SCRIPT<span>41%</span></h3>
+                    <div class="animationbar" id="animation3">
+                        <hr>
+                    </div>
+                    <h3>C<span>75%</span></h3>
+                    <div class="animationbar" id="animation4">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h3 class="projectsheading">MY PROJECTS</h3>
+        <div class="projectscontainer">
+            <h2>THESE ARE MY MINOR PROJECTS</h2>
+            <div class="projectsbox">
+                <div class="projectimage">
+                    <div class="imagep">
+                        <a href="https://vibhas677.github.io/Netflix/"> <img
+                                src="../vibhas project/netfliximg.jpeg" alt=""></a>
+                    </div>
+                    <h3 href="https://vibhas677.github.io/Netflix/"> NETFLIX - PROJECT </h3>
+                    <hr>
+                </div>
+                <div class="projectcontent">
+                    <h1>NETFLIX -Home page </h1>
+                    <p>Using HTML, and CSS I've skillfully crafted a Netflix Home Page. This project replicates the
+                        well-known streaming platform's look and feel, incorporating responsive design and interactive
+                        elements.</p>
+                    <p>Netflix, founded in 1997, is a global streaming giant offering a vast library of movies, TV
+                        shows, and original content. Its subscription-based model revolutionized entertainment
+                        consumption, enabling users to stream content on-demand across devices. The company's original
+                        productions and user-friendly interface have made it a dominant force in the industry.</p>
+                </div>
+            </div>
+            <div class="projectsbox">
+                <div class="projectimage">
+                    <div class="imagep">
+                        <img src="../vibhas project/tm2.jpg" alt="">
+                    </div>
+                    <h3>Temperature Converter</h3>
+                    <hr>
+                </div>
+                <div class="projectcontent">
+                    <h1>Temperature Converter</h1>
+                    <p>I've successfully designed a Temperature Converter page using HTML, CSS, and JavaScript. </p>
+                    <p>convert temperature form
+                        Celsius to Fahrenheit and etc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h3 class="contactheading">CONTACT</h3>
+        <div class="contactdatamain">
+            <div class="contactdatainner">
+                <div class="connect" id="call">
+                    <h2>Call</h2>
+                    <p>+91 9027648216 </p>
+                </div>
+                <div class="connect" id="write">
+                    <h2>Write</h2>
+                    <p><a href="mailto:ananttripathi470@gmail.com">vibhasgupta677@gmail.com</a></p>
+                </div>
+                <div class="connect" id="follow">
+                    <h2>Follow</h2>
+                    <p>
+                        <a href="https://www.facebook.com/" target="_blank"><img
+                                src="../vibhas project/facebook icon.webp" alt="" class="socialhandels"></a>
+                        <a href="https://www.instagram.com/" target="_blank"> <img
+                                src="../vibhas project/instagram icon.webp" alt="" class="socialhandels"></a>
+                        <a href="https://www.linkedin.com/" target="_blank"> <img
+                                src="../vibhas project/linkdn icon.webp" alt="" class="socialhandels"></a>
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Portfolio by Vibhas Gupta.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
